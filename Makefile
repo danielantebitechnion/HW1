@@ -10,7 +10,7 @@ AsciiArtTool.o : AsciiArtTool.c AsciiArtTool.h RLEList.h
   $(CC) -c $(DEBUG_FLAG) $(COMP_FLAG) $*.c
 RLEList.o : RLEList.c RLEList.h
   $(CC) -c $(DEBUG_FLAG) $(COMP_FLAG) $*.c
-main.o : main.c AsciiArtTool.c 
+main.o : main.c AsciiArtTool.h RLEList.h
   $(CC) -c $(DEBUG_FLAG) $(COMP_FLAG) $*.c
 clean:
   rm -f $(OBJS) $(EXEC)
